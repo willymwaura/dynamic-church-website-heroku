@@ -6,7 +6,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
 		
-		<title>CHRISTIAN CHURCH INTERNATIONAL</title>
+		<title >CHRISTIAN CHURCH INTERNATIONAL</title>
 
 		<!-- Loading third party fonts -->
 		<link href="{% static 'fonts/novecento-font/novecento-font.css' %}" rel="stylesheet" type="text/css">
@@ -29,17 +29,17 @@
 				<div class="container">
 					<a href="#" class="branding">
 						
-						<h1 class="site-title">CHRISTIAN CHURCH INTERNATIONAL -NYACABA</h1>
+						<h1 class="site-title"style="color:black ;font-weight:bold">CHRISTIAN CHURCH INTERNATIONAL -NYACABA</h1>
 					</a>
 
 					<div class="main-navigation">
-						<button class="menu-toggle"><i class="fa fa-bars"></i> Menu</button>
+						<button class="menu-toggle"><i class="fa fa-bars"style="color:black ;"></i> Menu</button>
 						<ul class="menu">
-							<li class="menu-item"><a href="home">Homepage </a></li>
+							<li class="menu-item"><a href="home"style="color:black ;">Homepage </a></li>
 	
-							<li class="menu-item"><a href="sermons">Sermons </a></li>
+							<li class="menu-item"><a href="sermons"style="color:black ;">Sermons </a></li>
 							<li class="menu-item current-menu-item"><a href="events">Events </a></li>
-							<li class="menu-item"><a href="https://www.biblegateway.com/resources/audio/">Audio bible </a></li>
+							<li class="menu-item"><a href="https://www.biblegateway.com/resources/audio/"style="color:black ;">Audio bible </a></li>
 							
 							
 						</ul>
@@ -51,7 +51,7 @@
 
 			<div class="page-head" data-bg-image="{% static 'images/page-head-1.jpg' %}">
 				<div class="container">
-					<h2 class="page-title">Sermons</h2>
+					<h2 class="page-title"style="color:black ;">Sermons</h2>
 				</div>
 			</div>
 
@@ -60,19 +60,19 @@
 					<div class="container">
 						<div class="row">
 							<div class="content col-md-8">
-								<h2 class="section-title">Latest sermons</h2>
+								<h2 class="section-title"style="color:black ;">Latest sermons</h2>
                            
 								<ul class="event-list large">
 									<li>
-										{% for instance in sermons%}
+										{% for instance in sermons reversed%}
 										<div class="seremon-detail">
-											<h3 class="seremon-title"><a href="#">{{instance.theme}}</a></h3>
+											<h3 class="seremon-title"><a href="#"style="color:black ;">{{instance.theme}}</a></h3>
 											<div class="seremon-meta">
-												<div class="pastor"><i class="fa fa-user"></i> {{instance.preacher}}</div>
-												<div class="pastor">{{instance.verses}}</div>
-												<div class="date"><i class="fa fa-calendar"></i> {{instance.date_today}}</div>
+												<div class="pastor"style="color:black ;"><i class="fa fa-user"style="color:black ;"></i> {{instance.preacher}}</div>
+												<div class="pastor"style="color:black ;">{{instance.verses}}</div>
+												<div class="date"style="color:black ;"><i class="fa fa-calendar"style="color:black ;"></i> {{instance.date_today}}</div>
 											</div>
-											<p>{{instance.sermon_summary}}</p>
+											<pstyle="color:black ;">{{instance.sermon_summary}}</p>
 										</div>
 										{%endfor%}
 									</li>
